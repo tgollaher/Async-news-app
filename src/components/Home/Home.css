@@ -1,0 +1,18 @@
+
+.job-title {
+    display: flex;
+    font-family: 'helvetica';
+    font-size: 18px;
+
+}
+img {
+    height: 200px;
+    width: 290px;
+    background-size: contain;
+    border: black solid 3px;
+    margin: 15px;
+}
+
+.description {
+    margin: 50px;
+}
