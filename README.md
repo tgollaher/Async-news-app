@@ -27,4 +27,4 @@ https://newsapi.org
         return searchResult.forEach(source => {
           this.setState({ articles: [...this.state.articles, source] })
         })
-      } ```
+      } 
