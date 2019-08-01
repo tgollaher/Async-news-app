@@ -52,8 +52,7 @@ export default class Search extends React.Component {
         <p>Title: {article.title}</p>
         <p>Author:  {article.author}</p>
         <p>Description:  {article.description}</p>
-        <img src={article.urlToImage} alt='img' style={{    height: '350px',
-    width: '500px'}} />
+        <img className='images' src={article.urlToImage} alt='img'/>
         <div>
           <a href={article.url} target={article.url}>Read more</a>
         </div>

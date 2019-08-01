@@ -12,7 +12,6 @@ form {
     height: 100%;
     align-items: center;
     
-  
 }
 
 .news-logos{
@@ -28,8 +27,8 @@ form {
     font-size: 35px;
 }
 .images {
-    height: 400px;
-    width: 550px;
+    height: 475px;
+    width: 875px;
 }
 
 div{
@@ -48,7 +47,6 @@ input {
 
 .rendered-text  {
     font-size: 18px;
-    font-weight: 900;
     font-family: 'Special Elite', cursive;
     margin-top: 40px;
     
