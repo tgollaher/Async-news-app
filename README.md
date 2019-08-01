@@ -1,6 +1,7 @@
 # Async-News
 
-# App URL: http://vague-flag.surge.sh/
+## Live Preview
+[http://vague-flag.surge.sh/](http://vague-flag.surge.sh/)
 
 ## Async Tech News
 
