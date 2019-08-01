@@ -17,9 +17,11 @@
 .article .text {
     display: flex;
     flex-direction: column;
+    
     padding: 25px;
     font-size: 18px;
     font-family: 'Special Elite', cursive;
+    width: 455px;
     
 }
 

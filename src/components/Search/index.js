@@ -50,8 +50,8 @@ export default class Search extends React.Component {
     const articles = this.state.articles.map(article => 
       <div className='rendered-text' key={article.publishedAt}>
         <p>Title: {article.title}</p>
-        <p>Author: {article.author}</p>
-        <p>Description: {article.description}</p>
+        <p>Author:  {article.author}</p>
+        <p>Description:  {article.description}</p>
         <img src={article.urlToImage} alt='img' style={{    height: '350px',
     width: '500px'}} />
         <div>

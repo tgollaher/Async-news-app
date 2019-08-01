@@ -46,8 +46,10 @@ input {
 
 }
 
-.rendered-text {
+.rendered-text  {
     font-size: 18px;
+    font-weight: 900;
     font-family: 'Special Elite', cursive;
     margin-top: 40px;
+    
 }
