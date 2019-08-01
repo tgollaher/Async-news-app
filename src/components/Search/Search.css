@@ -9,16 +9,16 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   
     height: 100%;
     align-items: center;
+    
   
 }
 
-.news-images {
-    height: 40px;
-    width: 100px;
+.news-logos{
+ margin-top: 80px;
 }
+
 
 .search-text {
     position: relative;

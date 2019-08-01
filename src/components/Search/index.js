@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import '../../images/news.png'
 
 export default class Search extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export default class Search extends React.Component {
   }
 
   getData = async () => {
+    await this.setState({articles:[]})
     try {
       const apiUrl = `https://newsapi.org/v2/everything?q=${this.state.userInput}&apiKey=${this.props.apiKey}`;
       const apiResponse = await axios.get(apiUrl);
@@ -50,7 +52,8 @@ export default class Search extends React.Component {
         <p>Title: {article.title}</p>
         <p>Author: {article.author}</p>
         <p>Description: {article.description}</p>
-        <img className='images' src={article.urlToImage} alt='img' />
+        <img src={article.urlToImage} alt='img' style={{    height: '350px',
+    width: '500px'}} />
         <div>
           <a href={article.url} target={article.url}>Read more</a>
         </div>
@@ -65,10 +68,11 @@ export default class Search extends React.Component {
             onChange={this.handleChange}
           />
           {articles}
-          <p className='search-text'>Type in your favorite topic!</p>
+          {this.state.articles ==! [] ? <p className='search-text'>Type in your favorite topic!</p>:false}
         </form>
-        <div>
-          <img className='news-images' src="./components/Search/news.png" alt="news logos"></img>
+        <div className='news-logos'>
+         <img src={require('../../images/news.png')} alt="news logos"/>
+          
         </div>
       
       </body>

@@ -18,7 +18,8 @@ const App = () => {
     return (
       <div className='app'>
         <nav>
-          <h1>Async News</h1>
+          <h1>Async <span className="tech-style">Tech</span> News</h1>
+          
           <Link to='/' className='anchor'>Home</Link>
           <Link to='/search' className='anchor'>Search</Link>
           <Link to='/tech' className='anchor'>Tech</Link>

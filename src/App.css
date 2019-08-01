@@ -17,6 +17,16 @@ body{
     font-family: 'Barriecito', cursive;
   
   }
+  .tech-style {
+    font-size: 20px;
+    font-family: 'Barriecito', cursive;
+
+  }
+  .goofy-header {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
   
   nav {
     display: flex;
@@ -38,3 +48,6 @@ body{
     font-weight: bold;
     color: #F5EBFF;
   }
+
+
+  

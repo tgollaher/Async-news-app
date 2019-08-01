@@ -27,7 +27,8 @@ export default class Science extends React.Component {
             const { title, urlToImage, description, url } = article
             return (
                 <div key={title} className='article'>
-                    <img src={urlToImage} alt='img' />
+                    <img src={urlToImage} alt='img' style={{    height: '350px',
+    width: '500px'}} />
                     <div className='text'>
                         <h3>{title}</h3>
                         <p>{description}</p>

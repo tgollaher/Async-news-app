@@ -14,7 +14,7 @@ export default class Home extends React.Component {
     }
 
     fetchNews = async () => {
-        const url = `https://newsapi.org/v2/everything?q=coding&apiKey=${this.props.apiKey}`
+        const url = `https://newsapi.org/v2/everything?q=programming&apiKey=${this.props.apiKey}`
         const data = await axios.get(url)
         const { data: { articles } } = data
         this.setState({ articles })
@@ -26,7 +26,8 @@ export default class Home extends React.Component {
             const { title, urlToImage, description, url} = article
             return (
                 <div key={title} className='article'>
-                    <img src={urlToImage} alt='img' />
+                    <img src={urlToImage} alt='img' style={{    height: '350px',
+    width: '500px'}} />
                     <div className='text'>
                         <h3>{title}</h3>
                         <p>{description}</p>
