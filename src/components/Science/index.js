@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import '../Home.css'
 
-export default class Frontend extends React.Component {
+
+export default class Science extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -15,21 +15,23 @@ export default class Frontend extends React.Component {
     }
 
     fetchNews = async () => {
-        const url = 'https://jobs.github.com/positions.json?description=frontend&location=United+States'
+        const url = `https://newsapi.org/v2/everything?q=science&apiKey=${this.props.apiKey}`
         const data = await axios.get(url)
-        const { data: { articles }} = data
+        const { data: { articles } } = data
         this.setState({ articles })
     }
 
     renderItems = () => {
         const { articles } = this.state
         return articles.map((article) => {
-            const { title, description } = article
+            const { title, urlToImage, description, url } = article
             return (
-                <div key={title} className='job-title'>
-                    <div className='description'>
+                <div key={title} className='article'>
+                    <img src={urlToImage} alt='img' />
+                    <div className='text'>
                         <h3>{title}</h3>
                         <p>{description}</p>
+                        <a href={url} target={url}>Read more</a>
                     </div>
                 </div>
             )

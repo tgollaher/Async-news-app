@@ -1,18 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
-.job-title {
+.article {
     display: flex;
-    font-family: 'helvetica';
+    flex-direction: center;
+    margin: 10px 0;
+    
+}
+.article img {
+    height: 350px;
+    width: 500px;
+    margin-top: 45px;
+    border: solid black 3px;
+
+}
+
+.article .text {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
     font-size: 18px;
-
-}
-img {
-    height: 200px;
-    width: 290px;
-    background-size: contain;
-    border: black solid 3px;
-    margin: 15px;
+    font-family: 'Special Elite', cursive;
+    
 }
 
-.description {
-    margin: 50px;
+.article .text h3 {
+    
+    font-weight: normal;
+    font-family: 'Special Elite', cursive;
+    
 }
