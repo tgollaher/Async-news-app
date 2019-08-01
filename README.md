@@ -1,5 +1,7 @@
 # Async-News
 
+# App URL: http://vague-flag.surge.sh/
+
 ## Async Tech News
 
 ### Description:
