@@ -14,7 +14,7 @@ This app will allow you to search through any article from hundreds of journals 
 2. Use the search function to look for recent articles of your fancy
 
 ### Software Used:
-- React, JavaScript, HTML, CSS, Axios
+- React, JavaScript, HTML, Flexbox, Axios
 
 #### Api:
 https://newsapi.org
