@@ -22,6 +22,10 @@ https://newsapi.org
 #### HTTP method:
 -GET
 
+#### Run code:
+1. npm install
+2. npm start
+
 #### Code Snippet:
 
 ```  const apiResponse = await axios.get(apiUrl);
